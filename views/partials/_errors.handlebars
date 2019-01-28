@@ -1,0 +1,12 @@
+<!--for passport we should check for error which is not a custom array -->
+{{#if error}}
+    <div class="alert alert-danger">{{error}}</div>
+{{/if}}
+
+
+<!--error handling from the server side -->
+{{#each errors}}
+    <div class="alert alert-danger">{{text}}</div>
+{{else}}
+
+{{/each}}
